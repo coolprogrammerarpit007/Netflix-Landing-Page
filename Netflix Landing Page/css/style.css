@@ -1,0 +1,426 @@
+/* General Styling of CSS */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Uchen', serif;;
+}
+/* Styling The Header Section for background-image */
+.heading{
+    /* background: #eb01a5;
+  background-image: url("../img/background.jpg"); /* fallback */
+  /* background: url("../img/background.jpg") no-repeat center center, linear-gradient(#eb01a5, #d13531); */ 
+  background:linear-gradient(45deg,
+              rgba(0,0,0, 0.85),
+              rgba(0,0,0, 0.75)), url(
+'../img/background.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+width: 100%;
+padding: 5rem;
+text-align: center;
+color: #fff;   
+}
+
+/* Styling The Top Section */
+
+.nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid red;
+    margin: 0rem auto;
+    position: relative;
+    bottom: 4rem;
+    left: 2rem;
+}
+
+.main-heading{
+    border: 0px solid green;
+    flex-basis: 70%;
+    text-align: center;
+    margin: 0 auto;   
+}
+
+.main-heading > h1{
+    border: 0px solid saddlebrown;
+    width:30%;
+    margin: 0 auto;
+    color: red;
+    font-size: 3rem;
+    position: relative;
+    left: 5rem;
+    
+}
+
+.nav .button{
+    border: 0px solid purple;
+    flex-basis: 20%;
+}
+.button .sign{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221,0,0);
+    padding: 5px 24px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Styling The Heading Content Section */
+
+.content{
+    border: 0px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 4rem;
+    text-align: center;
+}
+.content>h2{
+    margin-bottom: 0.5rem;
+    font-size: 5rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+}
+.content h3,.content .trial{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.content h3{
+    font-size: 2rem;
+}
+
+.content .trial{
+    font-size: 2.5rem;
+    background-color: rgb(221,0,0);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+}
+.services{
+    background-color: rgb(20, 20, 20);
+    padding: 2rem;
+    border-bottom: 0.5rem solid gray;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    text-align: center;
+}
+.service-container i{
+    font-size: 3.5rem;
+    color: rgb(255,255,255,0.5);
+}
+.service-container p{
+    margin-top: 1rem;
+    color: rgb(255,255,255,0.5);
+    font-size: 1.5rem;
+}
+.service1,.service2,.service3,button{
+    cursor: pointer;
+}
+
+.sign:hover,.trial:hover{
+    color: red;
+    background-color: white;
+}
+
+/* Styling The Services Options */
+.options{
+    background-color: #000;
+    padding: 4rem;
+
+}
+
+.option1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.article1{
+    flex-basis: 60%;
+    border: 0px solid red;
+    text-align: justify;
+}
+.cancel-img{
+    border: 0px solid green;
+    flex-basis: 30%;
+}
+
+/* Stling The Text */
+.article1:not(.btn){
+    line-height: 1.3; 
+    padding: 2px 0; 
+    width: 400px;
+}
+.article1 p{
+    padding: 4px 0;
+    color: #fff; 
+    /* word-spacing: 1rem; */
+    display: inline;
+    margin: 0; 
+    font-size: 2.5rem;
+    
+}
+
+/* *************************** */
+
+.btn{
+    display: block;
+    font-size:2rem;
+    background-color: rgb(221,0,0);
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.8rem;
+}
+
+.btn:hover{
+    text-transform: uppercase;
+    color: red;
+    background-color: white;
+}
+
+/* Styling The Option2 Section */
+.article2:not(.trial){
+    border:0px solid red;
+    padding: 10px 10px 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.3; 
+    padding: 2px 0; 
+    width: 80%;
+    margin: 10px auto;
+}
+
+.article2>p{
+    font-size:2.2rem;
+    padding: 4px 0;
+    color: #fff; 
+    /* word-spacing: 1rem; */
+    display: inline;
+    margin: 0; 
+    flex-basis: 70%;
+    
+}
+
+.article2 .trial{
+    font-size: 1.4rem;
+    background-color: rgb(221,0,0);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    flex-basis: 27%;
+}
+
+.article2 .trial:hover{
+    background-color: white;
+    color: rgb(221,0,0);
+}
+
+.display{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 10px;
+}
+
+.display h3{
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.display p{
+    color: rgb(153,153,153);
+    text-align: center;
+}
+
+
+
+/* Styling The Price-Tag Section */
+.price-card{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price-card h2{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.price-card .price-btn{
+    border: none;
+    font-size: 1.7rem;
+    margin: 10px auto;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+}
+.price-btn:hover{
+    background-color: #fff;
+    color: red;
+}
+table{
+    border: 0px solid red;
+    margin: auto;
+    width: 70%;
+}
+
+  table td{
+    color: white;
+    border: 0px solid green;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#table-head{
+    color: white;
+    text-align: center;
+}
+#table-head th{
+    font-size: 1.2rem;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(153,153,153);
+}
+tbody tr:nth-child(even):hover{
+    background-color: red;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(221,0,0);
+}
+tbody tr:nth-child(odd):hover{
+    background-color: rgb(153,153,153);
+}
+
+.hidden{
+    display: none;
+}
+
+/* Styling The Footer Section */
+footer{
+    background-color: #000;
+    padding: 4rem;
+}
+footer h3, footer p{
+    color: #fff;
+}
+footer h3{
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+.footer-content{
+    cursor: pointer;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+}
+
+
+/* Adding Responsivness To The Website */
+
+@media only screen and (max-width:768px){
+    /* Styling The Header Section for background-image */
+.heading{
+width: 100%;
+padding: 5rem;
+text-align: center;
+color: #fff;   
+}
+
+/* Styling The Top Section */
+
+.nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-heading{
+    border: 0px solid green;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0 auto;   
+}
+
+.main-heading > h1{
+    border: 0px solid saddlebrown;
+    width:30%;
+    margin: 0 auto;
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    left: -4rem;
+    
+}
+
+.nav .button{
+    border: 0px solid purple;
+    flex-basis: 20%;
+}
+.button .sign{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221,0,0);
+    padding: 5px 24px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Styling The Heading Content Section */
+
+
+.content>h2{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+}
+.content h3,.content .trial{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.content h3{
+    font-size: 2rem;
+}
+
+.content .trial{
+    font-size: 2.5rem;
+    background-color: rgb(221,0,0);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+}
+}
